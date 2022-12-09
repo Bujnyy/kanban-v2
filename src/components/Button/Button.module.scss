@@ -1,0 +1,19 @@
+.button {
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #5a70fa;
+  border-radius: 1.2rem;
+  width: 100%;
+  border: none;
+  min-width: 41.8rem;
+  color: #fff;
+  padding: 1.65rem 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button:hover {
+  background-color: #566aed;
+  transition: background-color 0.1s ease-in;
+}

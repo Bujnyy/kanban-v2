@@ -1,0 +1,89 @@
+// .root {
+//   background-color: black;
+
+//   &.isColorRed {
+//     background-color: red;
+//   }
+// }
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.formMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #222222;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #222222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+// -----------
+
+.imageMain {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background: #5a70fa;
+  border-radius: 3.2rem 0rem 0rem 3.2rem;
+}
+
+.image {
+  position: absolute;
+  height: 63%;
+  bottom: -2%;
+  left: 11%;
+}
+
+.image img {
+  height: 100%;
+}
+
+.imageTitle {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  font-weight: 700;
+  font-size: 4.2rem;
+  width: 60rem;
+  color: #fff;
+}
