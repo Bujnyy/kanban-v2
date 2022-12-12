@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import Home from '../views/Home/Home';
 import SignIn from '../views/SignIn/SignIn';
 import SignUp from '../views/SignUp/SignUp';
 import User from '../views/User/User';
@@ -8,7 +9,7 @@ import ProtectedRoute from './ProtectedRoute';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Hello world!</div>,
+    element: <Home />,
   },
   {
     path: '/signin',
