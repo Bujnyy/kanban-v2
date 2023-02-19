@@ -10,6 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   const authenticateUser = async () => {
     const response = await getUser();
+    console.log(response);
     setUser(response?.data);
     setIsLoading(false);
   };
@@ -18,6 +19,10 @@ export const AuthProvider = ({ children }) => {
     authenticateUser();
   }, []);
 
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
+
   const signInAction = async ({ email = user?.email, password }) => {
     if (!email) {
       return;
@@ -25,9 +30,11 @@ export const AuthProvider = ({ children }) => {
 
     const response = await signIn(email, password);
 
+    // console.log(response);
+
     setUser((state) => ({
       ...state,
-      token: response?.data?.token,
+      token: response?.user?.token,
     }));
   };
 
@@ -37,16 +44,19 @@ export const AuthProvider = ({ children }) => {
     }
 
     const response = await signUp(email, password);
+    console.log('dupa');
 
     console.log(response);
   };
 
   const signOutAction = async () => {
     const response = await signOut();
-
-    setUser(undefined);
-
     console.log(response);
+
+    setUser((state) => ({
+      ...state,
+      token: undefined,
+    }));
   };
 
   if (isLoading) {

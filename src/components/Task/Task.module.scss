@@ -1,0 +1,82 @@
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.04em;
+  color: #8f98a5;
+}
+
+.taskContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-width: 28.25rem;
+  border: 1px solid rgba(158, 158, 167, 0.4);
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+}
+
+.taskInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.taskFeature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile {
+  background-color: #000;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.difficulty {
+  font-family: 'Nunito';
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0.5rem 1.6rem;
+  background-color: #e3fae7;
+  color: #5bb969;
+  border-radius: 0.4rem;
+}
+
+.date {
+  font-family: 'Nunito';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  opacity: 0.9;
+  padding: 0.5rem 1.6rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  letter-spacing: -0.035em;
+  color: #403f44;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.image {
+  width: 100%;
+  height: 11.5rem;
+  object-fit: cover;
+  background-color: #000;
+  border-radius: 0.8rem;
+}

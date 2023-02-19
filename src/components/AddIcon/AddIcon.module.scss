@@ -1,0 +1,15 @@
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30%;
+
+  padding: 0.3rem;
+}
+
+svg {
+  height: 100%;
+
+  display: flex;
+}

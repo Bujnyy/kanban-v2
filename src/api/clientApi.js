@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost/kanban',
+  baseURL: 'http://localhost:8080/kanban',
   headers: {
     'Content-type': 'application/json',
     Authorization: localStorage.getItem('token'),

@@ -1,0 +1,23 @@
+.navbarContainer {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 1.8rem 3.2rem;
+  height: 8vh;
+
+  border-bottom: solid 0.1rem #e7e7e9;
+}
+
+.profile {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}

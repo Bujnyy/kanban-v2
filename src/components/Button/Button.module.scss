@@ -1,19 +1,21 @@
 .button {
-  font-size: 1.8rem;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
   cursor: pointer;
   background-color: #5a70fa;
   border-radius: 1.2rem;
-  width: 100%;
+  line-height: 1.5rem;
   border: none;
-  min-width: 41.8rem;
+  max-width: 70rem;
   color: #fff;
-  padding: 1.65rem 1.2rem;
+  padding: 1.35rem 1.8rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-.button:hover {
-  background-color: #566aed;
-  transition: background-color 0.1s ease-in;
+  &:hover {
+    background-color: #566aed;
+  }
 }

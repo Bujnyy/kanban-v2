@@ -1,10 +1,12 @@
 import React from 'react';
+import AddIcon from '../AddIcon/AddIcon';
 import styles from './Button.module.scss';
 
-const Button = ({ children, ...restProps }) => {
+const Button = ({ add, children, ...restProps }) => {
   return (
     <button className={styles.button} {...restProps}>
-      {children}
+      {add ? <AddIcon /> : ''}
+      <span>{children}</span>
     </button>
   );
 };

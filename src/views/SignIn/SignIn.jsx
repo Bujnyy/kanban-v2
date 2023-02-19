@@ -26,6 +26,7 @@ const SignIn = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    console.log(authContext);
 
     authContext?.signInAction({
       email: data.get('email'),
@@ -66,7 +67,7 @@ const SignIn = () => {
           A simple, efficient and easy way to collaborate
         </div>
         <div className={styles.image}>
-          <img src='../../../public/macbook.png' />
+          {/* <img src='../../../public/macbook.png' /> */}
         </div>
       </div>
     </div>

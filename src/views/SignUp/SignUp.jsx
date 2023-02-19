@@ -65,7 +65,7 @@ const SignUp = () => {
           A simple, efficient and easy way to collaborate
         </div>
         <div className={styles.image}>
-          <img src='../../../public/macbook.png' />
+          {/* <img src='../../../public/macbook.png' /> */}
         </div>
       </div>
     </div>
