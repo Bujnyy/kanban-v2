@@ -3,10 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import AddIcon from '../../components/AddIcon/AddIcon';
 import Button from '../../components/Button/Button';
 import Navbar from '../../components/Navbar/Navbar';
-import Task from '../../components/Task/Task';
+import Task from '../../components/TaskSection/Task/Task';
 import { AuthContext } from '../../context/AuthContext';
 import styles from './User.modules.scss';
-import macbook from '../../../public/meeting.jpeg';
+import TasksColumn from '../../components/TaskSection/TasksColumn/TasksColumn';
+import TaskSection from '../../components/TaskSection/TaskSection';
 
 const User = () => {
   const authContext = useContext(AuthContext);
@@ -26,35 +27,7 @@ const User = () => {
   return (
     <>
       <Navbar />
-      <Task
-        title='Research competition’s product design'
-        description='Make research about other kanban projects to make sure that our
-        product is the best'
-        difficulty='LOW'
-        date='Sept 22, 2022'
-        image={macbook}
-      />
-      <Task
-        title='Research competition’s product design'
-        description='Make research about other kanban projects to make sure that our
-        product is the best'
-        difficulty='LOW'
-        date='Sept 22, 2022'
-      />
-      <Task
-        title='Research competition’s product design'
-        description='Make research about other kanban projects to make sure that our
-        product is the best'
-        difficulty='LOW'
-        date='Sept 22, 2022'
-      />
-      <Task
-        title='Research competition’s product design'
-        description='Make research about other kanban projects to make sure that our
-        product is the best'
-        difficulty='LOW'
-        date='Sept 22, 2022'
-      />
+      <TaskSection />
 
       {/* <div className={styles.title}>You have logged in!</div>
       <p>Site in process...</p>
