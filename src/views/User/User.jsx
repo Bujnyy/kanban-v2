@@ -2,12 +2,12 @@ import React, { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AddIcon from '../../components/AddIcon/AddIcon';
 import Button from '../../components/Button/Button';
-import Navbar from '../../components/Layout/Navbar/Navbar';
 import Task from '../../components/Board/Task/Task';
 import { AuthContext } from '../../context/AuthContext';
 import TasksColumn from '../../components/Board/BoardColumn/BoardColumn';
 import TaskSection from '../../components/Board/Board';
 import styles from './User.modules.scss';
+import Layout from '../../components/Layout/Layout';
 
 const User = () => {
   const authContext = useContext(AuthContext);
@@ -26,17 +26,18 @@ const User = () => {
 
   return (
     <>
-      <Navbar />
-      <div className={styles.mainSection}>
-        <div className={styles.sidebar}></div>
+      <Layout>
         <TaskSection />
-      </div>
+      </Layout>
+      {/* <div className={styles.mainSection}>
+        
+      </div> */}
 
-      <div className={styles.title}>You have logged in!</div>
+      {/* <div className={styles.title}>You have logged in!</div>
       <p>Site in process...</p>
       <form onSubmit={handleLogout}>
         <Button>Logout</Button>
-      </form>
+      </form> */}
     </>
   );
 };

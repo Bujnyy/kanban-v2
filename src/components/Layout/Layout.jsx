@@ -1,12 +1,17 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import styles from './Layout.module.scss';
+import Navbar from './Navbar/Navbar';
+import Sidebar from './Sidebar/Sidebar';
 
 const Layout = ({ children, ...props }) => {
   return (
-    <div>
+    <>
       <Navbar />
-      {children}
-    </div>
+      <div className={styles.mainWrapper}>
+        <Sidebar />
+        {children}
+      </div>
+    </>
   );
 };
 

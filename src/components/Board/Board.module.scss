@@ -1,6 +1,15 @@
-.taskSectionContainer {
-  display: flex;
-  flex-direction: row;
+.main {
+  width: 100%;
   padding: 0rem 3.2rem 3.2rem;
+  margin-left: 27rem;
   gap: 16px;
+}
+
+.taskSectionContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-rows: auto;
+  gap: 16px;
+  height: fit-content;
 }

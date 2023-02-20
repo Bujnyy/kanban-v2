@@ -1,0 +1,35 @@
+.workspaceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem 0;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.workspaceProgress {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: #fbcd72;
+
+  padding: 4px 16px;
+  background-color: #fff3d2;
+  border-radius: 4px;
+}
+
+.workspaceDescription {
+  font-weight: 400;
+  letter-spacing: 0.024em;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
