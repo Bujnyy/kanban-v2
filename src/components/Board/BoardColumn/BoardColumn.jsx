@@ -1,4 +1,4 @@
-import styles from './TasksColumn.module.scss';
+import styles from './BoardColumn.module.scss';
 
 import React, { Children } from 'react';
 

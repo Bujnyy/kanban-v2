@@ -1,8 +1,8 @@
 import React from 'react';
 import Task from './Task/Task';
-import TasksColumn from './TasksColumn/TasksColumn';
+import TasksColumn from './BoardColumn/BoardColumn';
 import macbook from '../../../public/meeting.jpeg';
-import styles from './TaskSection.module.scss';
+import styles from './Board.module.scss';
 
 const TaskSection = () => {
   return (

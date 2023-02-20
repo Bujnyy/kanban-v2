@@ -1,31 +1,29 @@
 import axios from 'axios';
 
-const apiClient = axios.create({
+const getConfig = (method) => ({
+  method,
   baseURL: 'http://localhost:8080/kanban',
   headers: {
-    'Content-type': 'application/json',
     Authorization: localStorage.getItem('token'),
+    'Content-type': 'application/json',
   },
-  withCredentials: true,
 });
 
 const getCall = async (url) => {
-  const response = await apiClient.get(url);
+  const response = await axios({
+    url,
+    ...getConfig('get'),
+  });
   return response.data;
 };
 
 const postCall = async (url, body) => {
-  const response = await apiClient.post(url, body);
-  return response.data;
-};
-const updateCall = async (url, body) => {
-  const response = await apiClient.put(url, body);
-  return response.data;
-};
-
-const deleteCall = async (url, body) => {
-  const response = await apiClient.delete(url, body);
+  const response = await axios({
+    url,
+    data: body,
+    ...getConfig('post'),
+  });
   return response.data;
 };
 
-export { getCall, postCall, updateCall, deleteCall };
+export { getCall, postCall };
