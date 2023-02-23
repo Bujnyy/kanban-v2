@@ -23,3 +23,11 @@ export const signOut = async () => {
     console.log(err);
   }
 };
+
+export const signUp = async (email, password) => {
+  try {
+    return await postCall('/signup.php', { email, password });
+  } catch (err) {
+    console.log(err);
+  }
+};

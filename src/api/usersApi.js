@@ -1,12 +1,4 @@
-import { getCall, postCall } from './clientApi';
-
-export const signUp = async (email, password) => {
-  try {
-    return await postCall('/signup.php', { email, password });
-  } catch (err) {
-    console.log(err);
-  }
-};
+import { getCall } from './clientApi';
 
 export const getUser = async () => {
   try {

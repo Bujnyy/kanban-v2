@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useEffect } from 'react';
-import { signUp } from '../../api/usersApi';
+import { signUp } from '../../api/sessionsApi.js';
 import { AuthContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import styles from './SignUp.module.scss';
