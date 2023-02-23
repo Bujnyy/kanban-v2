@@ -31,3 +31,15 @@ export const signUp = async (email, password) => {
     console.log(err);
   }
 };
+
+export const createTask = async (title, description, difficulty) => {
+  try {
+    return await postCall('/createTask.php', {
+      title,
+      description,
+      difficulty,
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};

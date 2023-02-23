@@ -1,5 +1,5 @@
 import React, { createContext, useEffect } from 'react';
-import { signIn, signOut, signUp } from '../api/sessionsApi';
+import { signIn, signOut, signUp, createTask } from '../api/sessionsApi';
 import { getUser } from '../api/usersApi';
 
 export const AuthContext = createContext(null);
@@ -63,6 +63,20 @@ export const AuthProvider = ({ children }) => {
     return null;
   }
 
+  const createTaskAction = async ({ title, description, difficulty }) => {
+    const response = await createTask(title, description, difficulty);
+    console.log(response);
+
+    // setUser((state) => ({
+    //   ...state,
+    //   token: undefined,
+    // }));
+  };
+
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <AuthContext.Provider
       value={{
@@ -71,6 +85,7 @@ export const AuthProvider = ({ children }) => {
         signUpAction,
         signOutAction,
         setUser,
+        createTaskAction,
       }}
     >
       {children}
